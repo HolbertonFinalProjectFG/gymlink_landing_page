@@ -1,0 +1,32 @@
+.features{
+  @apply w-full p-10 overflow-hidden;
+  @apply flex flex-col items-center justify-evenly gap-20;
+}
+
+.features article{
+ @apply w-full flex flex-col gap-8
+}
+
+.features article h3{
+  @apply font-semibold text-2xl
+}
+
+.features article p{
+  @apply font-light pl-2;
+}
+
+.features article img{
+  @apply w-full mt-5 bg-black rounded-xl aspect-video;
+}
+
+.shadowedBox{
+  @apply -z-10 relative;
+  filter: drop-shadow(0px 0px 124.4px rgba(233, 136, 0, 0.459));
+}
+
+.trapezoid{
+  @apply w-screen h-full absolute;
+  @apply -z-10 -top-10 -left-10;
+  @apply bg-light-primary;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 60%);
+}

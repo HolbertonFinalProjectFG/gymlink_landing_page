@@ -11,11 +11,11 @@ export const App = () => {
   return (
     <>
       <Navbar/>
-      <main>
+      <main className='w-vw h-svh'>
         <Home/>
         <Features/>
-        <AboutUs/>
-        <ContactUs/>
+        {/* <AboutUs/>
+        <ContactUs/> */}
       </main>
     </>
   )

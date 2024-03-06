@@ -12,9 +12,9 @@ export default {
       colors: {
         light: {
           primary: '#F09518',
-          secondary: '#E4E3E2',
-          backg: '#EFF0F1',
-          secondary_op: '#232323'
+          aux: '#FFFFFF',
+          aux_op: '#232323',
+          backg: '#EFF0F1'
         }
       },
       flex: {
@@ -28,5 +28,8 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer')
+  ]
 }

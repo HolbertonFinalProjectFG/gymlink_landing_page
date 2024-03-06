@@ -1,0 +1,16 @@
+.navBar{
+  @apply fixed top-0 left-0 z-30 p-3 
+}
+
+.navBarLinks{
+  @apply w-screen h-svh absolute top-0 left-0;
+  @apply flex flex-col items-center justify-center;
+  @apply bg-light-aux_op;
+  @apply transition-opacity;
+}
+
+.navBarLinks > ul{
+  @apply w-full h-3/4;
+  @apply text-2xl text-light-primary;
+  @apply flex flex-col items-center justify-center gap-8;
+}

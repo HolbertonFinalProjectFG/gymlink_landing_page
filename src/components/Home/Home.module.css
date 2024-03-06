@@ -1,0 +1,32 @@
+.home{
+  @apply w-full h-svh;
+  @apply text-light-aux;
+  @apply bg-[url('./assets/gymHome.jpg')] bg-cover bg-origin-border bg-center bg-fixed;
+  @apply flex flex-col items-center justify-center;
+}
+
+.home h1{
+  @apply font-grozen font-bold;
+  @apply text-4xl;
+}
+
+.homeBgLayer{
+  @apply w-full h-full absolute top-0 left-0 z-10;
+  @apply bg-opacity-50;
+  background: linear-gradient(180deg, #232323 0%, rgba(123, 84, 30, 0.57) 43%, rgba(240, 149, 24, 0) 100%);
+}
+
+.homeWrapper{
+  @apply w-full h-[90%] p-10 relative z-10;
+  @apply flex flex-col items-center justify-items-start gap-8;
+}
+
+.homeWrapper p{
+  @apply text-2xl text-center
+}
+
+.homeWrapper a{
+  @apply text-center bg-light-primary;
+  @apply mt-auto mb-10 py-3 min-w-36 rounded-xl;
+  @apply hover:scale-105 active:scale-95 transition-transform;
+}
