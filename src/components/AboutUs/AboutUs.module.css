@@ -1,0 +1,52 @@
+.aboutUs{
+  @apply relative min-h-fit w-full flex flex-col items-center justify-start py-10;
+}
+
+.aboutUs ul{
+  @apply p-5 sm:p-10 relative h-full w-full;
+  @apply flex flex-col items-center justify-center gap-10;
+}
+
+.aboutUsTextWrapper{
+  @apply w-full flex flex-col items-center justify-center;
+  @apply overflow-hidden relative
+}
+
+.aboutUsTextWrapper{
+  @apply text-3xl font-semibold pb-5;
+}
+
+
+
+/* Styles for the member card */
+
+.memberCard{
+  @apply flex-1 h-full w-full max-w-[20rem];
+  @apply relative min-h-[30rem] overflow-hidden rounded-xl;
+  @apply shadow-lg
+}
+
+.imgWrapper{
+  @apply w-full;
+}
+
+.memberImg{
+  @apply bg-cover bg-center;
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.memberInfo{
+  @apply absolute bottom-0 left-0 bg-light-aux w-full py-5 px-3;
+}
+.memberInfo h4{
+  @apply font-semibold uppercase;
+}
+
+.memberInfo h5{
+  @apply text-xs uppercase mt-1;
+}
+
+.fr{
+  @apply opacity-100 hover:opacity-0 transition-opacity;
+}
+

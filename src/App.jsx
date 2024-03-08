@@ -14,8 +14,8 @@ export const App = () => {
       <main className='w-vw h-svh'>
         <Home/>
         <Features/>
-        {/* <AboutUs/>
-        <ContactUs/> */}
+        <AboutUs/>
+        {/* <ContactUs/> */}
       </main>
     </>
   )

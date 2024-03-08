@@ -7,7 +7,7 @@
 
 .home h1{
   @apply font-grozen font-bold;
-  @apply text-4xl;
+  @apply text-3xl;
 }
 
 .homeBgLayer{
@@ -22,11 +22,11 @@
 }
 
 .homeWrapper p{
-  @apply text-2xl text-center
+  @apply text-xl text-center
 }
 
 .homeWrapper a{
-  @apply text-center bg-light-primary;
+  @apply text-center text-sm bg-light-primary;
   @apply mt-auto mb-10 py-3 min-w-36 rounded-xl;
   @apply hover:scale-105 active:scale-95 transition-transform;
 }
