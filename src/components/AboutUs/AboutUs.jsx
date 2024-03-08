@@ -10,7 +10,7 @@ const membersData = [
     role: 'Project Manager, Frontend Developer',
     github: 'https://github.com/Facusan2016',
     linkedin: 'https://www.linkedin.com/in/facundos%C3%A1nchez/',
-    portfolio: 'https://facundosanchez.netlify.app/',
+    portfolio: 'https://facundosanchezv2.netlify.app/',
     imgCr: images.FacundoCr,
     imgFr: images.FacundoFr
   },

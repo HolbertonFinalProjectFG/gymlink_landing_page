@@ -26,6 +26,27 @@
   @apply shadow-lg
 }
 
+.memberCardLayer{
+  @apply flex flex-col justify-end;
+  @apply absolute top-0 left-0 w-full h-full z-20;
+  @apply bg-black transition-all bg-opacity-0;
+  @apply hover:opacity-100 hover:backdrop-blur-[1px] hover:bg-opacity-10
+}
+
+.memberCardLinks{
+  @apply w-full h-[16rem];
+  @apply flex flex-row items-center justify-center gap-10
+}
+
+.memberCardLinks img{
+  @apply w-8 h-8;
+}
+
+.memberCardLinks a{
+  @apply translate-y-28 transition-transform;
+  @apply w-8 h-8;
+}
+
 .imgWrapper{
   @apply w-full;
 }
@@ -36,7 +57,7 @@
 }
 
 .memberInfo{
-  @apply absolute bottom-0 left-0 bg-light-aux w-full py-5 px-3;
+  @apply absolute bottom-0 left-0 bg-light-aux w-full py-5 px-3 z-20;
 }
 .memberInfo h4{
   @apply font-semibold uppercase;
@@ -47,6 +68,6 @@
 }
 
 .fr{
-  @apply opacity-100 hover:opacity-0 transition-opacity;
+  @apply opacity-100 group-hover:opacity-0 transition-opacity;
 }
 

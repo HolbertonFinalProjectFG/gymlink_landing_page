@@ -24,7 +24,7 @@ export const Home = () => {
 
   return (
     <section ref={homeRef} className={styles.home}>
-      <div className={`bg-layer ${styles.homeBgLayer}`}/>
+      <div className={` ${styles.homeBgLayer}`}/>
       <div className={styles.homeWrapper}>
         <img className='home-img' src={gymLinkLogo} alt='gymlink-logo'/>
         <h1>
