@@ -1,10 +1,25 @@
+.featuresIntro{
+  @apply w-full h-fit p-10 font-light;
+  @apply flex flex-col gap-10;
+}
+
+.featuresIntro h2{
+  @apply text-2xl
+}
+
+.featuresIntro h2 b{
+  @apply text-light-primary font-bold;
+}
+
 .features{
+  @apply sm:p-1;
   @apply w-full p-10 overflow-hidden;
   @apply flex flex-col items-center justify-evenly gap-20;
 }
 
 .features article{
- @apply w-full flex flex-col gap-8
+  @apply relative z-40;
+  @apply w-full flex flex-col gap-8
 }
 
 .features article h3{

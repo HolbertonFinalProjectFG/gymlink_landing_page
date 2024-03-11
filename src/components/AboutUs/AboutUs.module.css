@@ -1,5 +1,18 @@
+.inspiration{
+  @apply w-full h-fit p-10;
+  @apply flex flex-col gap-10;
+}
+
+.inspiration h2{
+  @apply text-2xl text-light-aux_op
+}
+
+.inspiration h2 b{
+  @apply text-light-primary;
+}
+
 .aboutUs{
-  @apply relative min-h-fit w-full flex flex-col items-center justify-start py-10;
+  @apply relative min-h-fit w-full flex flex-col items-center justify-start pb-10;
 }
 
 .aboutUs ul{
@@ -13,28 +26,26 @@
 }
 
 .aboutUsTextWrapper{
-  @apply text-3xl font-semibold pb-5;
+  @apply text-2xl font-light pb-5;
 }
-
-
 
 /* Styles for the member card */
 
 .memberCard{
-  @apply flex-1 h-full w-full max-w-[20rem];
+  @apply flex-1 h-full w-full flex flex-col justify-start max-w-[20rem];
   @apply relative min-h-[30rem] overflow-hidden rounded-xl;
   @apply shadow-lg
 }
 
 .memberCardLayer{
-  @apply flex flex-col justify-end;
-  @apply absolute top-0 left-0 w-full h-full z-20;
+  @apply flex flex-col justify-end rounded-xl;
+  @apply absolute bottom-0 left-0 w-full h-[10.5rem] z-20;
   @apply bg-black transition-all bg-opacity-0;
-  @apply hover:opacity-100 hover:backdrop-blur-[1px] hover:bg-opacity-10
+  @apply hover:opacity-100 hover:backdrop-blur-[5px] hover:bg-opacity-10
 }
 
 .memberCardLinks{
-  @apply w-full h-[16rem];
+  @apply w-full;
   @apply flex flex-row items-center justify-center gap-10
 }
 
@@ -43,6 +54,7 @@
 }
 
 .memberCardLinks a{
+  @apply hover:scale-105;
   @apply translate-y-28 transition-transform;
   @apply w-8 h-8;
 }

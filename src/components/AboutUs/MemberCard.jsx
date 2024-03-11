@@ -16,20 +16,21 @@ export const MemberCard = ({
     <li className={`group ${styles.memberCard}`}>
       <div className={`group ${styles.memberCardLayer}`}>
         <div className={styles.memberCardLayerWrapper}>
-          <p></p>
           <div className={styles.memberCardLinks}>
-            <a href={github} className='group-hover:translate-y-0'>
-              <img src={Github}/>
-            </a>
-            <a href={linkedin} className='group-hover:translate-y-0'>
-              <img src={LinkedIn}/>
-            </a>
-            {
-              portfolio &&
-              <a href={portfolio} className='group-hover:translate-y-0'>
-                <img src={Web}/>
+            <div className='flex flex-row mb-28 gap-8 items-center'>
+              <a href={github} className='group-hover:translate-y-0'>
+                <img src={Github}/>
               </a>
-            }
+              <a href={linkedin} className='group-hover:translate-y-0'>
+                <img src={LinkedIn}/>
+              </a>
+              {
+                portfolio &&
+                <a href={portfolio} className='group-hover:translate-y-0'>
+                  <img src={Web}/>
+                </a>
+              }
+            </div>
           </div>
         </div>
       </div>

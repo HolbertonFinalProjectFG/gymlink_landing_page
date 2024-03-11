@@ -1,5 +1,4 @@
 import { MemberCard } from './MemberCard'
-import textDecoration from './assets/decoration.svg'
 import styles from './AboutUs.module.css'
 import images from './assets/members'
 
@@ -58,17 +57,38 @@ const membersData = [
 
 export const AboutUs = () => {
   return (
-    <section className={styles.aboutUs}>
-      <div className={styles.aboutUsTextWrapper}>
-        <h2>Meet our Team</h2>
-      </div>
-      <ul>
-        {
-          membersData.map((member) =>
-            <MemberCard key={member.id} {...member}/>
-          )
-        }
-      </ul>
-    </section>
+    <>
+      <article className={styles.inspiration}>
+        <h2>
+          What inspired us to <b>make this project?</b>
+        </h2>
+        <p>
+          The idea for GymLink originated from the dissatisfaction of
+          some of our team members with the conventional method of accessing
+          gym routines, which typically involves paper sheets displaying exercises.
+          We decided we wanted to create a tool that would allow gym clients easy
+          access to their routines, as well as provide a fast way for trainers to
+          create them. This is how the initial concept of GymLink was conceived.
+        </p>
+        <p>
+          Once we had decided to develop GymLink, we recognized the need for a more
+          comprehensive and useful application. That&apos;s when we chose to incorporate
+          an administration section, where the admin user would be able to manage all
+          of the user&apos;s data, as well as the gym&apos;s inventory.
+        </p>
+      </article>
+      <section className={styles.aboutUs}>
+        <div className={styles.aboutUsTextWrapper}>
+          <h2>Meet our Team</h2>
+        </div>
+        <ul>
+          {
+            membersData.map((member) =>
+              <MemberCard key={member.id} {...member}/>
+            )
+          }
+        </ul>
+      </section>
+    </>
   )
 }
