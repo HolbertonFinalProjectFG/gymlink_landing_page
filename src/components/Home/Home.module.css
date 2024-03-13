@@ -8,6 +8,11 @@
 .home h1{
   @apply font-grozen font-bold;
   @apply text-3xl;
+  @apply md:text-[4.5rem]
+}
+
+.homeImg{
+  @apply md:w-1/2 md:max-w-[20rem] md:min-w-[16rem]
 }
 
 .homeBgLayer{
@@ -17,16 +22,19 @@
 }
 
 .homeWrapper{
-  @apply w-full h-[90%] p-10 relative z-10;
-  @apply flex flex-col items-center justify-items-start gap-8;
+  @apply w-full h-3/4 p-10 relative z-10;
+  @apply flex flex-col items-center justify-center gap-8;
+  @apply md:flex-row md:w-1/2 md:gap-20 sm:gap-10
 }
 
 .homeWrapper p{
-  @apply text-xl text-center
+  @apply text-xl text-center;
+  @apply md:text-left;
 }
 
-.homeWrapper a{
+.home a{
   @apply text-center text-sm bg-light-primary;
-  @apply mt-auto mb-10 py-3 min-w-36 rounded-xl;
+  @apply mt-auto mb-12 py-3 min-w-36 rounded-xl;
   @apply hover:scale-105 active:scale-95 transition-transform;
+  @apply md:text-base md:w-fit md:mt-0
 }

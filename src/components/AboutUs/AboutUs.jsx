@@ -79,7 +79,7 @@ export const AboutUs = () => {
       </article>
       <section className={styles.aboutUs}>
         <div className={styles.aboutUsTextWrapper}>
-          <h2>Meet our Team</h2>
+          <h2 className='md:mb-10'>Meet our Team</h2>
         </div>
         <ul>
           {

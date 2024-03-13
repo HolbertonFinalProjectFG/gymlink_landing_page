@@ -1,37 +1,60 @@
 .featuresIntro{
   @apply w-full h-fit p-10 font-light;
   @apply flex flex-col gap-10;
+  @apply md:items-center md:py-32;
 }
 
 .featuresIntro h2{
-  @apply text-2xl
+  @apply text-2xl mb-5;
+  @apply md:text-4xl md:mb-10;
 }
 
 .featuresIntro h2 b{
   @apply text-light-primary font-bold;
 }
 
+.featuresIntro p {
+  @apply md:text-lg
+}
+
 .features{
   @apply sm:p-1;
   @apply w-full p-10 overflow-hidden;
-  @apply flex flex-col items-center justify-evenly gap-20;
+  @apply flex flex-col items-center justify-evenly gap-20 md:gap-0;
 }
 
 .features article{
   @apply relative z-40;
-  @apply w-full flex flex-col gap-8
+  @apply w-full flex flex-col gap-8;
+  @apply md:flex-row md:w-2/3 md:gap-20 md:py-10
+}
+
+.features article img{
+  @apply aspect-video rounded-xl;
+  @apply max-h-[20rem]
+}
+
+.featureInfoWrapper{
+  @apply flex flex-col gap-6;
+  @apply md:flex-1
+}
+
+.reverseRow{
+  @apply md:!flex-row-reverse
 }
 
 .features article h3{
-  @apply font-semibold text-2xl
+  @apply font-semibold text-2xl;
 }
 
 .features article p{
   @apply font-light pl-2;
 }
 
-.features article img{
-  @apply w-full mt-5 bg-black rounded-xl aspect-video;
+.featureImgHorizontal{
+  @apply w-full h-[45vw];
+  @apply rounded-xl;
+  @apply bg-cover md:flex-1 md:h-[20rem];
 }
 
 .shadowedBox{
@@ -43,5 +66,7 @@
   @apply w-screen h-full absolute;
   @apply -z-10 -top-10 -left-10;
   @apply bg-light-primary;
+  @apply md:-left-[calc(25%+2.5rem)];
+  @apply md:h-[30rem];
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 60%);
 }

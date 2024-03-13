@@ -1,14 +1,18 @@
 .inspiration{
   @apply w-full h-fit p-10;
   @apply flex flex-col gap-10;
+  @apply md:w-2/3 md:text-lg md:font-light;
+  @apply md:top-0 md:left-0 md:right-0 md:bottom-0 md:m-auto;
+  @apply md:py-32
 }
 
 .inspiration h2{
-  @apply text-2xl text-light-aux_op
+  @apply text-2xl text-light-aux_op;
+  @apply md:text-4xl
 }
 
 .inspiration h2 b{
-  @apply text-light-primary;
+  @apply text-light-primary font-bold;
 }
 
 .aboutUs{
@@ -18,6 +22,7 @@
 .aboutUs ul{
   @apply p-5 sm:p-10 relative h-full w-full;
   @apply flex flex-col items-center justify-center gap-10;
+  @apply md:flex-row
 }
 
 .aboutUsTextWrapper{
@@ -27,6 +32,7 @@
 
 .aboutUsTextWrapper{
   @apply text-2xl font-light pb-5;
+  @apply md:text-3xl
 }
 
 /* Styles for the member card */

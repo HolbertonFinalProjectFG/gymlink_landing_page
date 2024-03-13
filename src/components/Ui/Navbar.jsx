@@ -3,7 +3,7 @@ import { HamMenu } from './HamMenu'
 import styles from './Navbar.module.css'
 import gsap from 'gsap'
 
-export const Navbar = () => {
+export const Navbar = ({ isMobile }) => {
   const [navBarOpen, setNavBarOpen] = useState(false)
   const navBarRef = useRef(null)
 
@@ -22,23 +22,40 @@ export const Navbar = () => {
   }, [navBarOpen])
 
   return (
-    <nav className={styles.navBar} ref={navBarRef}>
-      <HamMenu open={navBarOpen} setOpen={setNavBarOpen}/>
-      <div
-        style={{
-          opacity: navBarOpen ? '1' : '0',
-          visibility: navBarOpen ? 'visible' : 'hidden',
-          transition: 'opacity .2s, visibility .2s'
-        }}
-        className={styles.navBarLinks}
-      >
-        <ul>
-          <li className='navbar-link'>Product</li>
-          <li className='navbar-link'>Features</li>
-          <li className='navbar-link'>About us</li>
-          <li className='navbar-link'>Contact us</li>
-        </ul>
-      </div>
-    </nav>
+    <>
+      {
+        isMobile
+          ? (
+              <nav className={styles.navBar} ref={navBarRef}>
+                <HamMenu open={navBarOpen} setOpen={setNavBarOpen}/>
+                <div
+                  style={{
+                    opacity: navBarOpen ? '1' : '0',
+                    visibility: navBarOpen ? 'visible' : 'hidden',
+                    transition: 'opacity .2s, visibility .2s'
+                  }}
+                  className={styles.navBarLinks}
+                >
+                  <ul>
+                    <li className='navbar-link'>Product</li>
+                    <li className='navbar-link'>Features</li>
+                    <li className='navbar-link'>About us</li>
+                    <li className='navbar-link'>Contact us</li>
+                  </ul>
+                </div>
+              </nav>
+            )
+          : (
+              <nav className={styles.navBarDesktop} ref={navBarRef}>
+                  <ul>
+                    <li className='navbar-link'>Product</li>
+                    <li className='navbar-link'>Features</li>
+                    <li className='navbar-link'>About us</li>
+                    <li className='navbar-link'>Contact us</li>
+                  </ul>
+              </nav>
+            )
+      }
+    </>
   )
 }
