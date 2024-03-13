@@ -23,7 +23,7 @@ export const Home = () => {
   }, { scope: homeRef })
 
   return (
-    <section ref={homeRef} className={styles.home}>
+    <section id='home' ref={homeRef} className={styles.home}>
       <div className={` ${styles.homeBgLayer}`}/>
       <div className={styles.homeWrapper}>
         <img className={styles.homeImg} src={gymLinkLogo} alt='gymlink-logo'/>
@@ -36,7 +36,7 @@ export const Home = () => {
           </p>
         </div>
       </div>
-        <a href='https://gymlink-frontend-cweybgrrnq-uc.a.run.app'>
+        <a className='relative z-40' href='https://gymlink-frontend-cweybgrrnq-uc.a.run.app'>
           Try the app
         </a>
     </section>

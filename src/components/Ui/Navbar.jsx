@@ -37,10 +37,30 @@ export const Navbar = ({ isMobile }) => {
                   className={styles.navBarLinks}
                 >
                   <ul>
-                    <li className='navbar-link'>Product</li>
-                    <li className='navbar-link'>Features</li>
-                    <li className='navbar-link'>About us</li>
-                    <li className='navbar-link'>Contact us</li>
+                    <li className='navbar-link'>
+                      <a
+                        onClick={() => setNavBarOpen(false)}
+                        href='#home'
+                      >
+                        Home
+                      </a>
+                      </li>
+                    <li className='navbar-link'>
+                      <a
+                        onClick={() => setNavBarOpen(false)}
+                        href='#features'
+                      >
+                        Features
+                      </a>
+                      </li>
+                    <li className='navbar-link'>
+                      <a
+                        onClick={() => setNavBarOpen(false)}
+                        href='#aboutus'
+                      >
+                        About us
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </nav>
@@ -48,10 +68,21 @@ export const Navbar = ({ isMobile }) => {
           : (
               <nav className={styles.navBarDesktop} ref={navBarRef}>
                   <ul>
-                    <li className='navbar-link'>Product</li>
-                    <li className='navbar-link'>Features</li>
-                    <li className='navbar-link'>About us</li>
-                    <li className='navbar-link'>Contact us</li>
+                    <li className='navbar-link'>
+                      <a href='#home'>
+                        Home
+                      </a>
+                      </li>
+                    <li className='navbar-link'>
+                      <a href='#features'>
+                        Features
+                      </a>
+                    </li>
+                    <li className='navbar-link'>
+                      <a href='#aboutus'>
+                        About us
+                      </a>
+                    </li>
                   </ul>
               </nav>
             )

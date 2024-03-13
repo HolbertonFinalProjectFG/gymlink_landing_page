@@ -58,7 +58,7 @@ const membersData = [
 export const AboutUs = () => {
   return (
     <>
-      <article className={styles.inspiration}>
+      <article id='aboutus' className={styles.inspiration}>
         <h2>
           What inspired us to <b>make this project?</b>
         </h2>

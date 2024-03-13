@@ -60,7 +60,7 @@ export const Features = ({ isMobile }) => {
 
   return (
     <>
-      <article ref={introFeaturesRef} className={`features-intro ${style.featuresIntro}`}>
+      <article id='features' ref={introFeaturesRef} className={`features-intro ${style.featuresIntro}`}>
         <div className='md:w-2/3'>
           <h2>
             Gymlink is about fostering unity among gym admins,
