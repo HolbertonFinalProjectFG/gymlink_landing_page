@@ -84,7 +84,7 @@ export const Features = ({ isMobile }) => {
           <div className={style.trapezoid}/>
           <div className={style.featureInfoWrapper}>
             <h3 className='text-light-aux'>Users and inventory management</h3>
-            <p className='text-light-aux'>
+            <p className='text-light-aux md:text-light-aux_op'>
               Keep your clients and employees well organized with the tools we provide.
               Our intuitive user interface makes it easier for you to register clients
               and employees, streamlining your day.
