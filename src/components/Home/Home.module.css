@@ -1,7 +1,7 @@
 .home{
   @apply w-full h-svh;
   @apply text-light-aux;
-  @apply bg-[url('./assets/gymHome.jpg')] bg-cover bg-origin-border bg-center bg-fixed;
+  @apply bg-[url('./assets/gymHome.jpg')] bg-cover bg-origin-border bg-center bg-scroll md:bg-fixed;
   @apply flex flex-col items-center justify-center;
 }
 

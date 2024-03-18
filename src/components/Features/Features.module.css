@@ -26,12 +26,12 @@
 .features article{
   @apply relative z-40;
   @apply w-full flex flex-col gap-8;
-  @apply md:flex-row md:w-2/3 md:gap-20 md:py-10
+  @apply 2xl:flex-row md:w-2/3 md:gap-20 md:py-10
 }
 
 .features article img{
+  @apply 2xl:max-h-[20rem];
   @apply aspect-video rounded-xl;
-  @apply max-h-[20rem]
 }
 
 .featureInfoWrapper{
@@ -40,7 +40,7 @@
 }
 
 .reverseRow{
-  @apply md:!flex-row-reverse
+  @apply 2xl:!flex-row-reverse
 }
 
 .features article h3{
@@ -48,11 +48,11 @@
 }
 
 .features article p{
-  @apply font-light pl-2;
+  @apply font-light pl-2 ;
 }
 
 .featureImgHorizontal{
-  @apply w-full h-[45vw];
+  @apply w-full h-[45vw] md:w-[30rem];
   @apply rounded-xl;
   @apply bg-cover md:flex-1 md:h-[20rem];
 }

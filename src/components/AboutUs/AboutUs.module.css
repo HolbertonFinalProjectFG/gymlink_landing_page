@@ -21,7 +21,7 @@
 
 .aboutUs ul{
   @apply p-5 sm:p-10 relative h-full w-full;
-  @apply flex flex-col items-center justify-center gap-10;
+  @apply flex flex-col flex-wrap items-center justify-center gap-10;
   @apply md:flex-row
 }
 
@@ -38,9 +38,15 @@
 /* Styles for the member card */
 
 .memberCard{
-  @apply flex-1 h-full w-full flex flex-col justify-start max-w-[20rem];
+  @apply w-full max-w-[20rem] h-full flex flex-col justify-start md:w-[20rem];
   @apply relative min-h-[30rem] overflow-hidden rounded-xl;
   @apply shadow-lg
+}
+
+@media screen and (max-width: 760px) and (min-width: 420px) {
+  .memberCard{
+    width: 20rem
+  }
 }
 
 .memberCardLayer{
