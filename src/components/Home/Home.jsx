@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import arrow from './assets/arrow.svg'
 import gsap from 'gsap'
 import styles from './Home.module.css'
 import gymLinkLogo from '/assets/logo.svg'
@@ -36,6 +37,7 @@ export const Home = () => {
           </p>
         </div>
       </div>
+        <img src={arrow} className=' animate-bounce md:hidden'/>
         <a className='relative z-40' href='https://gymlink-frontend-cweybgrrnq-uc.a.run.app'>
           Try the app
         </a>
